@@ -15,12 +15,12 @@ Incorporating Mini Class into your project is straightforward. Here's how you ca
 
 ### Installation
 
-- **Download the CSS File**: Download `simple-package.css` from the repository or via the provided download link.
+- **Download the CSS File**: Download `mini-class.css` from the repository or via the provided download link.
 - **Place the File in Your Project Directory**: Make sure the CSS file is placed where you can easily link to it.
 - **Link the CSS File in Your HTML**:
     Include Mini Class in your HTML to start using it immediately:
     ```html
-    <link rel="stylesheet" href="path/to/simple-package.css">
+    <link rel="stylesheet" href="path/to/mini-class.css">
     ```
 
 ### Additional Stylesheets
