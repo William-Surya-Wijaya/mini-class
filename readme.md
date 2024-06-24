@@ -33,7 +33,7 @@ Detailed documentation will be available soon. It will include comprehensive gui
 
 ## Support and Contribution
 
-For support, feature requests, or contributions, you can create an issue [on this form](https://github.com/William-Surya-Wijaya/mini-class/issues/new/choose). I appreciate community feedback and contributions to improve Mini Class.
+For support, feature requests, or contributions, you can create an [issue on this form](https://github.com/William-Surya-Wijaya/mini-class/issues/new/choose). I appreciate community feedback and contributions to improve Mini Class.
 
 ## About the Author
 
