@@ -15,7 +15,7 @@ Incorporating Mini Class into your project is straightforward. Here's how you ca
 
 ### Installation
 
-#### Download
+**Download**
 - **Download the CSS File**: Download `mini-class.css` from the repository or via the provided download link.
 - **Place the File in Your Project Directory**: Make sure the CSS file is placed where you can easily link to it.
 - **Link the CSS File in Your HTML**:
@@ -24,7 +24,7 @@ Incorporating Mini Class into your project is straightforward. Here's how you ca
     <link rel="stylesheet" href="path/to/mini-class.css">
     ```
 
-#### CDN
+**CDN**
     ```html
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/William-Surya-Wijaya/mini-class@master/mini-class.css">
     ```
