@@ -30,6 +30,8 @@ Incorporating Mini Class into your project is straightforward. Here's how you ca
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/William-Surya-Wijaya/mini-class@master/mini-class.css">
     ```
 
+**If you want to customize mini class by your own then i recommend to just download mini-class.css**
+
 ### Additional Stylesheets
 
 Alongside the main Mini Class framework, additional stylesheets such as Datatables customization are available. These can be integrated with Mini Class to enhance functionality and aesthetic appeal across various components.
