@@ -25,6 +25,7 @@ Incorporating Mini Class into your project is straightforward. Here's how you ca
     ```
 
 **CDN**
+    Include Mini Class using CDN link:
     ```html
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/William-Surya-Wijaya/mini-class@master/mini-class.css">
     ```
