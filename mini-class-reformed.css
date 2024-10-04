@@ -1,0 +1,1862 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.coming-soon{
+  display: none !important;
+}
+
+.float-fixed{
+  position: fixed;
+}
+
+.float-absolute{
+  position: fixed;
+}
+
+.bottom-0{
+  bottom: 0;
+}
+
+.top-0{
+  top: 0;
+}
+
+.right-0{
+  right: 0;
+}
+
+.left-0{
+  left: 0;
+}
+
+.z-min-1{
+  z-index: -1;
+}
+
+.z-0{
+  z-index: 0;
+}
+
+.z-1{
+  z-index: 1;
+}
+
+.z-2{
+  z-index: 2;
+}
+
+.z-3{
+  z-index: 3;
+}
+
+.z-4{
+  z-index: 4;
+}
+
+.z-5{
+  z-index: 5;
+}
+
+.w-fw{
+  width: 100vw;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.w-max-content{
+  width: max-content;
+}
+
+.h-max-content{
+  height: max-content;
+}
+
+.h-100{
+  height: 100% !important;
+}
+
+.hidden{
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.hidden.entry-slide-up{
+  transition: opacity 0.25s ease-in-out,
+              all 0.25s ease-in-out;
+  transform: translateY(20px);
+}
+
+.hidden.show.entry-slide-up{
+  transform: translateY(0);
+}
+
+.hidden.show{
+  opacity: 1;
+}
+
+.x-60{
+  padding-left: 20%;
+  padding-right: 20%;
+  width: 60% !important;
+}
+
+.col-gap-10{
+  column-gap: 10px;
+}
+
+.col-gap-20{
+  column-gap: 20px;
+}
+
+.col-gap-30{
+  column-gap: 30px;
+}
+
+.col-gap-40{
+  column-gap: 40px;
+}
+
+.col-gap-50{
+  column-gap: 50px;
+}
+
+.gap-10{
+  gap: 10px;
+}
+
+.gap-20{
+  gap: 20px;
+}
+
+.gap-30{
+  gap: 30px;
+}
+
+.gap-40{
+  gap: 40px;
+}
+
+.gap-50{
+  gap: 50px;
+}
+
+.fs-xxxs-icon {
+  font-size: clamp(14px, 2.5vw, 16px);
+}
+
+.fs-xxs-icon {
+  font-size: clamp(16px, 3vw, 18px);
+}
+
+.fs-xs-icon {
+  font-size: clamp(18px, 3.5vw, 20px);
+}
+
+.fs-s-icon {
+  font-size: clamp(24px, 5vw, 28px);
+}
+
+.fs-m-icon {
+  font-size: clamp(38px, 6vw, 42px);
+}
+
+.fs-l-icon {
+  font-size: clamp(44px, 7vw, 48px);
+}
+
+.fs-xl-icon {
+  font-size: clamp(54px, 8vw, 58px);
+}
+
+.fs-xxl-icon {
+  font-size: clamp(74px, 11vw, 78px);
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.btn{
+  display: flex;
+  background-color: transparent;
+}
+
+.loader {
+  margin-left: 8px;
+  display: none;
+  transform: translate(-50%, -50%);
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  border-top: 2px solid #000000;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.border-white{
+  border: 1px solid #fff;
+}
+
+.border-radius-all{
+  border-radius: 1000px;
+}
+
+.grid-2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+
+.ar-16-5{
+  aspect-ratio: 16/5;
+}
+
+.object-fit-cover{
+  object-fit: cover;
+}
+
+.object-fit-contain{
+  object-fit: contain;
+}
+
+.object-position-center{
+  object-position: center;
+}
+
+.tablet-hide{
+  display: flex;
+}
+
+.tablet-show, .mobile-show{
+  display: none !important;
+}
+
+.no-white{
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1200px) {
+  .tablet-grid-1{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .tablet-text-center{
+    text-align: center;
+  }
+  
+  .tablet-text-left{
+    text-align: left;
+  }
+  
+  .tablet-text-right{
+    text-align: right;
+  }
+
+  .nav-bar.x-60{
+    padding: 18px 36px;
+    width: calc(100vw - 72px) !important;
+  }
+
+  .tablet-hide{
+    display: none;
+  }
+
+  .tablet-align-items-center{
+    align-items: center;
+  }
+
+  .tablet-clear-padding{
+    padding: 0;
+  }
+
+  .tablet-clear-margin{
+    margin: 0;
+  }
+
+  .tablet-justify-content-center{
+    justify-content: center;
+  }
+
+  .tablet-show{
+    display: flex !important;
+  }
+
+  .tablet-col-gap-10{
+    column-gap: 10px;
+  }
+  
+  .tablet-col-gap-20{
+    column-gap: 20px;
+  }
+  
+  .tablet-col-gap-30{
+    column-gap: 30px;
+  }
+  
+  .tablet-col-gap-40{
+    column-gap: 40px;
+  }
+  
+  .tablet-col-gap-50{
+    column-gap: 50px;
+  }
+  
+  .tablet-gap-10{
+    gap: 10px;
+  }
+  
+  .tablet-gap-20{
+    gap: 20px;
+  }
+  
+  .tablet-gap-30{
+    gap: 30px;
+  }
+  
+  .tablet-gap-40{
+    gap: 40px;
+  }
+  
+  .tablet-gap-50{
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mobile-grid-1{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .mobile-text-center{
+    text-align: center;
+  }
+  
+  .mobile-text-left{
+    text-align: left;
+  }
+  
+  .mobile-text-right{
+    text-align: right;
+  }
+
+  .mobile-hide{
+    display: none;
+  }
+
+  .mobile-show{
+    display: flex !important;
+  }
+
+  .nav-bar.x-60{
+    padding: 18px 36px;
+    width: calc(100vw - 72px) !important;
+  }
+
+  .mobile-align-items-center{
+    align-items: center;
+  }
+
+  .mobile-clear-padding{
+    padding: 0;
+  }
+
+  .mobile-clear-margin{
+    margin: 0;
+  }
+
+  .mobile-justify-content-center{
+    justify-content: center;
+  }
+
+  .mobile-col-gap-10{
+    column-gap: 10px;
+  }
+  
+  .mobile-col-gap-20{
+    column-gap: 20px;
+  }
+  
+  .mobile-col-gap-30{
+    column-gap: 30px;
+  }
+  
+  .mobile-col-gap-40{
+    column-gap: 40px;
+  }
+  
+  .mobile-col-gap-50{
+    column-gap: 50px;
+  }
+  
+  .mobile-gap-10{
+    gap: 10px;
+  }
+  
+  .mobile-gap-20{
+    gap: 20px;
+  }
+  
+  .mobile-gap-30{
+    gap: 30px;
+  }
+  
+  .mobile-gap-40{
+    gap: 40px;
+  }
+  
+  .mobile-gap-50{
+    gap: 50px;
+  }
+
+  .mobile-col{
+    flex-direction: column;
+  }
+
+  .mobile-row{
+    flex-direction: row;
+  }
+
+  .section.x-60{
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80% !important;
+  }
+}
+
+/* Row and Column Layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* Flex Wrap */
+.wrap {
+  flex-wrap: wrap;
+}
+
+.no-wrap {
+  flex-wrap: nowrap;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-auto {
+  display: grid;
+  grid-auto-flow: dense;
+}
+
+.grid-gap-10 {
+  grid-gap: 10px;
+}
+
+.grid-gap-20 {
+  grid-gap: 20px;
+}
+
+.grid-gap-30 {
+  grid-gap: 30px;
+}
+
+/* Flexbox Align Items */
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-between {
+  align-items: space-between;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.align-items-baseline {
+  align-items: baseline;
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
+
+/* Flexbox Justify Content */
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+/* Flexbox Align Self */
+.align-self-auto {
+  align-self: auto;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.align-self-stretch {
+  align-self: stretch;
+}
+
+/* Media Queries for Responsive Layout */
+
+/* Small Screen (Mobile) */
+@media screen and (max-width: 640px) {
+  .mobile\:grid-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile\:grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mobile\:grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .mobile\:grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .mobile\:align-items-start {
+    align-items: flex-start;
+  }
+
+  .mobile\:align-items-center {
+    align-items: center;
+  }
+
+  .mobile\:align-items-end {
+    align-items: flex-end;
+  }
+
+  .mobile\:justify-content-start {
+    justify-content: flex-start;
+  }
+
+  .mobile\:justify-content-center {
+    justify-content: center;
+  }
+
+  .mobile\:justify-content-end {
+    justify-content: flex-end;
+  }
+
+  .mobile\:justify-content-between {
+    justify-content: space-between;
+  }
+}
+
+/* Medium Screen (Tablet) */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .tablet\:grid-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .tablet\:grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tablet\:grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tablet\:grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tablet\:align-items-start {
+    align-items: flex-start;
+  }
+
+  .tablet\:align-items-center {
+    align-items: center;
+  }
+
+  .tablet\:align-items-end {
+    align-items: flex-end;
+  }
+
+  .tablet\:justify-content-start {
+    justify-content: flex-start;
+  }
+
+  .tablet\:justify-content-center {
+    justify-content: center;
+  }
+
+  .tablet\:justify-content-end {
+    justify-content: flex-end;
+  }
+
+  .tablet\:justify-content-between {
+    justify-content: space-between;
+  }
+}
+
+/* Large Screen (Desktop) */
+@media screen and (min-width: 1025px) {
+  .desktop\:grid-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .desktop\:grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .desktop\:grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .desktop\:grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .desktop\:align-items-start {
+    align-items: flex-start;
+  }
+
+  .desktop\:align-items-center {
+    align-items: center;
+  }
+
+  .desktop\:align-items-end {
+    align-items: flex-end;
+  }
+
+  .desktop\:justify-content-start {
+    justify-content: flex-start;
+  }
+
+  .desktop\:justify-content-center {
+    justify-content: center;
+  }
+
+  .desktop\:justify-content-end {
+    justify-content: flex-end;
+  }
+
+  .desktop\:justify-content-between {
+    justify-content: space-between;
+  }
+}
+
+/* Font Size Classes (fs) */
+.fs-xxxs {
+  font-size: 0.5rem; /* 8px */
+}
+
+.fs-xxs {
+  font-size: 0.75rem; /* 12px */
+}
+
+.fs-xs {
+  font-size: 0.875rem; /* 14px */
+}
+
+.fs-s {
+  font-size: 1rem; /* 16px */
+}
+
+.fs-m {
+  font-size: 1.125rem; /* 18px */
+}
+
+.fs-l {
+  font-size: 1.25rem; /* 20px */
+}
+
+.fs-xl {
+  font-size: 1.5rem; /* 24px */
+}
+
+.fs-xxl {
+  font-size: 1.75rem; /* 28px */
+}
+
+.fs-xxxl {
+  font-size: 2rem; /* 32px */
+}
+
+/* Font Weight Classes (fw) */
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+/* Media Queries for Responsive Font Size */
+
+/* Small Screen (Mobile) */
+@media screen and (max-width: 640px) {
+  .mobile\:fs-xxxs {
+    font-size: 0.5rem; /* 8px */
+  }
+
+  .mobile\:fs-xxs {
+    font-size: 0.75rem; /* 12px */
+  }
+
+  .mobile\:fs-xs {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  .mobile\:fs-s {
+    font-size: 1rem; /* 16px */
+  }
+
+  .mobile\:fs-m {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  .mobile\:fs-l {
+    font-size: 1.25rem; /* 20px */
+  }
+
+  .mobile\:fs-xl {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .mobile\:fs-xxl {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  .mobile\:fs-xxxl {
+    font-size: 2rem; /* 32px */
+  }
+}
+
+/* Medium Screen (Tablet) */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .tablet\:fs-xxxs {
+    font-size: 0.5rem; /* 8px */
+  }
+
+  .tablet\:fs-xxs {
+    font-size: 0.75rem; /* 12px */
+  }
+
+  .tablet\:fs-xs {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  .tablet\:fs-s {
+    font-size: 1rem; /* 16px */
+  }
+
+  .tablet\:fs-m {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  .tablet\:fs-l {
+    font-size: 1.25rem; /* 20px */
+  }
+
+  .tablet\:fs-xl {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .tablet\:fs-xxl {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  .tablet\:fs-xxxl {
+    font-size: 2rem; /* 32px */
+  }
+}
+
+/* Large Screen (Desktop) */
+@media screen and (min-width: 1025px) {
+  .desktop\:fs-xxxs {
+    font-size: 0.5rem; /* 8px */
+  }
+
+  .desktop\:fs-xxs {
+    font-size: 0.75rem; /* 12px */
+  }
+
+  .desktop\:fs-xs {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  .desktop\:fs-s {
+    font-size: 1rem; /* 16px */
+  }
+
+  .desktop\:fs-m {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  .desktop\:fs-l {
+    font-size: 1.25rem; /* 20px */
+  }
+
+  .desktop\:fs-xl {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .desktop\:fs-xxl {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  .desktop\:fs-xxxl {
+    font-size: 2rem; /* 32px */
+  }
+}
+
+
+/* Width Classes (vx) */
+.vx-10 {
+  width: 10% !important;
+}
+
+.vx-20 {
+  width: 20% !important;
+}
+
+.vx-30 {
+  width: 30% !important;
+}
+
+.vx-40 {
+  width: 40% !important;
+}
+
+.vx-50 {
+  width: 50% !important;
+}
+
+.vx-60 {
+  width: 60% !important;
+}
+
+.vx-70 {
+  width: 70% !important;
+}
+
+.vx-80 {
+  width: 80% !important;
+}
+
+.vx-90 {
+  width: 90% !important;
+}
+
+.vx-100 {
+  width: 100% !important;
+}
+
+/* Media Queries for Responsive Width */
+
+/* Small Screen (Mobile) */
+@media screen and (max-width: 640px) {
+  .mobile\:vx-10 {
+    width: 10% !important;
+  }
+
+  .mobile\:vx-20 {
+    width: 20% !important;
+  }
+
+  .mobile\:vx-30 {
+    width: 30% !important;
+  }
+
+  .mobile\:vx-40 {
+    width: 40% !important;
+  }
+
+  .mobile\:vx-50 {
+    width: 50% !important;
+  }
+
+  .mobile\:vx-60 {
+    width: 60% !important;
+  }
+
+  .mobile\:vx-70 {
+    width: 70% !important;
+  }
+
+  .mobile\:vx-80 {
+    width: 80% !important;
+  }
+
+  .mobile\:vx-90 {
+    width: 90% !important;
+  }
+
+  .mobile\:vx-100 {
+    width: 100% !important;
+  }
+}
+
+/* Medium Screen (Tablet) */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .tablet\:vx-10 {
+    width: 10% !important;
+  }
+
+  .tablet\:vx-20 {
+    width: 20% !important;
+  }
+
+  .tablet\:vx-30 {
+    width: 30% !important;
+  }
+
+  .tablet\:vx-40 {
+    width: 40% !important;
+  }
+
+  .tablet\:vx-50 {
+    width: 50% !important;
+  }
+
+  .tablet\:vx-60 {
+    width: 60% !important;
+  }
+
+  .tablet\:vx-70 {
+    width: 70% !important;
+  }
+
+  .tablet\:vx-80 {
+    width: 80% !important;
+  }
+
+  .tablet\:vx-90 {
+    width: 90% !important;
+  }
+
+  .tablet\:vx-100 {
+    width: 100% !important;
+  }
+}
+
+/* Large Screen (Desktop) */
+@media screen and (min-width: 1025px) {
+  .desktop\:vx-10 {
+    width: 10% !important;
+  }
+
+  .desktop\:vx-20 {
+    width: 20% !important;
+  }
+
+  .desktop\:vx-30 {
+    width: 30% !important;
+  }
+
+  .desktop\:vx-40 {
+    width: 40% !important;
+  }
+
+  .desktop\:vx-50 {
+    width: 50% !important;
+  }
+
+  .desktop\:vx-60 {
+    width: 60% !important;
+  }
+
+  .desktop\:vx-70 {
+    width: 70% !important;
+  }
+
+  .desktop\:vx-80 {
+    width: 80% !important;
+  }
+
+  .desktop\:vx-90 {
+    width: 90% !important;
+  }
+
+  .desktop\:vx-100 {
+    width: 100% !important;
+  }
+}
+
+/* Padding and Margin with rem scale */
+.p-xxxs {
+  padding: 0.125rem; /* 2px */
+}
+
+.p-xxs {
+  padding: 0.25rem; /* 4px */
+}
+
+.p-xs {
+  padding: 0.5rem; /* 8px */
+}
+
+.p-s {
+  padding: 0.75rem; /* 12px */
+}
+
+.p-m {
+  padding: 1rem; /* 16px */
+}
+
+.p-l {
+  padding: 1.5rem; /* 24px */
+}
+
+.p-xl {
+  padding: 2rem; /* 32px */
+}
+
+.p-xxl {
+  padding: 2.5rem; /* 40px */
+}
+
+.p-xxxl {
+  padding: 3rem; /* 48px */
+}
+
+/* Padding Horizontal (px) */
+.px-xxxs {
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
+}
+
+.px-xxs {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-xs {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-s {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-m {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-l {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Padding Vertical (py) */
+.py-xxxs {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.py-xxs {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-xs {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-s {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-m {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-l {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Margin Classes */
+.m-xxxs {
+  margin: 0.125rem; /* 2px */
+}
+
+.m-xxs {
+  margin: 0.25rem; /* 4px */
+}
+
+.m-xs {
+  margin: 0.5rem; /* 8px */
+}
+
+.m-s {
+  margin: 0.75rem; /* 12px */
+}
+
+.m-m {
+  margin: 1rem; /* 16px */
+}
+
+.m-l {
+  margin: 1.5rem; /* 24px */
+}
+
+.m-xl {
+  margin: 2rem; /* 32px */
+}
+
+.m-xxl {
+  margin: 2.5rem; /* 40px */
+}
+
+.m-xxxl {
+  margin: 3rem; /* 48px */
+}
+
+/* Margin Horizontal (mx) */
+.mx-xxxs {
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
+}
+
+.mx-xxs {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.mx-xs {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-s {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.mx-m {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-l {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* Margin Vertical (my) */
+.my-xxxs {
+  margin-top: 0.125rem;
+  margin-bottom: 0.125rem;
+}
+
+.my-xxs {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.my-xs {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-s {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.my-m {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-l {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Negative Margin */
+.-m-xxxs {
+  margin: -0.125rem;
+}
+
+.-m-xxs {
+  margin: -0.25rem;
+}
+
+.-m-xs {
+  margin: -0.5rem;
+}
+
+.-m-s {
+  margin: -0.75rem;
+}
+
+.-m-m {
+  margin: -1rem;
+}
+
+.-mx-xxxs {
+  margin-left: -0.125rem;
+  margin-right: -0.125rem;
+}
+
+.-mx-xxs {
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+}
+
+.-mx-xs {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.-mx-s {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.-mx-m {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+/* Media Queries for Responsive Padding and Margin */
+
+/* Small Screen (Mobile) */
+@media screen and (max-width: 640px) {
+  .mobile\:p-s {
+    padding: 0.75rem; /* 12px */
+  }
+  
+  .mobile\:p-m {
+    padding: 1rem; /* 16px */
+  }
+
+  .mobile\:m-s {
+    margin: 0.75rem; /* 12px */
+  }
+
+  .mobile\:m-m {
+    margin: 1rem; /* 16px */
+  }
+}
+
+/* Media Queries for Responsive Padding and Margin */
+
+/* Small Screen (Mobile) */
+@media screen and (max-width: 640px) {
+  .mobile\:p-xxxs {
+    padding: 0.125rem;
+  }
+  
+  .mobile\:p-xxs {
+    padding: 0.25rem;
+  }
+  
+  .mobile\:p-xs {
+    padding: 0.5rem;
+  }
+
+  .mobile\:p-s {
+    padding: 0.75rem;
+  }
+
+  .mobile\:p-m {
+    padding: 1rem;
+  }
+
+  .mobile\:p-l {
+    padding: 1.5rem;
+  }
+
+  .mobile\:p-xl {
+    padding: 2rem;
+  }
+
+  .mobile\:p-xxl {
+    padding: 2.5rem;
+  }
+
+  .mobile\:p-xxxl {
+    padding: 3rem;
+  }
+
+  .mobile\:m-xxxs {
+    margin: 0.125rem;
+  }
+
+  .mobile\:m-xxs {
+    margin: 0.25rem;
+  }
+
+  .mobile\:m-xs {
+    margin: 0.5rem;
+  }
+
+  .mobile\:m-s {
+    margin: 0.75rem;
+  }
+
+  .mobile\:m-m {
+    margin: 1rem;
+  }
+
+  .mobile\:m-l {
+    margin: 1.5rem;
+  }
+
+  .mobile\:m-xl {
+    margin: 2rem;
+  }
+
+  .mobile\:m-xxl {
+    margin: 2.5rem;
+  }
+
+  .mobile\:m-xxxl {
+    margin: 3rem;
+  }
+
+  /* Responsive for Horizontal and Vertical Padding and Margin */
+  .mobile\:px-xxxs {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
+
+  .mobile\:px-xxs {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .mobile\:px-xs {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .mobile\:px-s {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .mobile\:px-m {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .mobile\:px-l {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .mobile\:px-xl {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .mobile\:px-xxl {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .mobile\:px-xxxl {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .mobile\:py-xxxs {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+
+  .mobile\:py-xxs {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .mobile\:py-xs {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .mobile\:py-s {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .mobile\:py-m {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .mobile\:py-l {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .mobile\:py-xl {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .mobile\:py-xxl {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .mobile\:py-xxxl {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+/* Medium Screen (Tablet) */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .tablet\:p-xxxs {
+    padding: 0.125rem;
+  }
+
+  .tablet\:p-xxs {
+    padding: 0.25rem;
+  }
+
+  .tablet\:p-xs {
+    padding: 0.5rem;
+  }
+
+  .tablet\:p-s {
+    padding: 0.75rem;
+  }
+
+  .tablet\:p-m {
+    padding: 1rem;
+  }
+
+  .tablet\:p-l {
+    padding: 1.5rem;
+  }
+
+  .tablet\:p-xl {
+    padding: 2rem;
+  }
+
+  .tablet\:p-xxl {
+    padding: 2.5rem;
+  }
+
+  .tablet\:p-xxxl {
+    padding: 3rem;
+  }
+
+  .tablet\:m-xxxs {
+    margin: 0.125rem;
+  }
+
+  .tablet\:m-xxs {
+    margin: 0.25rem;
+  }
+
+  .tablet\:m-xs {
+    margin: 0.5rem;
+  }
+
+  .tablet\:m-s {
+    margin: 0.75rem;
+  }
+
+  .tablet\:m-m {
+    margin: 1rem;
+  }
+
+  .tablet\:m-l {
+    margin: 1.5rem;
+  }
+
+  .tablet\:m-xl {
+    margin: 2rem;
+  }
+
+  .tablet\:m-xxl {
+    margin: 2.5rem;
+  }
+
+  .tablet\:m-xxxl {
+    margin: 3rem;
+  }
+
+  /* Responsive for Horizontal and Vertical Padding and Margin */
+  .tablet\:px-xxxs {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
+
+  .tablet\:px-xxs {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .tablet\:px-xs {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .tablet\:px-s {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .tablet\:px-m {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .tablet\:px-l {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .tablet\:px-xl {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .tablet\:px-xxl {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .tablet\:px-xxxl {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .tablet\:py-xxxs {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+
+  .tablet\:py-xxs {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .tablet\:py-xs {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .tablet\:py-s {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .tablet\:py-m {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .tablet\:py-l {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .tablet\:py-xl {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .tablet\:py-xxl {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .tablet\:py-xxxl {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+/* Large Screen (Desktop) */
+@media screen and (min-width: 1025px) {
+  .desktop\:p-xxxs {
+    padding: 0.125rem;
+  }
+
+  .desktop\:p-xxs {
+    padding: 0.25rem;
+  }
+
+  .desktop\:p-xs {
+    padding: 0.5rem;
+  }
+
+  .desktop\:p-s {
+    padding: 0.75rem;
+  }
+
+  .desktop\:p-m {
+    padding: 1rem;
+  }
+
+  .desktop\:p-l {
+    padding: 1.5rem;
+  }
+
+  .desktop\:p-xl {
+    padding: 2rem;
+  }
+
+  .desktop\:p-xxl {
+    padding: 2.5rem;
+  }
+
+  .desktop\:p-xxxl {
+    padding: 3rem;
+  }
+
+  .desktop\:m-xxxs {
+    margin: 0.125rem;
+  }
+
+  .desktop\:m-xxs {
+    margin: 0.25rem;
+  }
+
+  .desktop\:m-xs {
+    margin: 0.5rem;
+  }
+
+  .desktop\:m-s {
+    margin: 0.75rem;
+  }
+
+  .desktop\:m-m {
+    margin: 1rem;
+  }
+
+  .desktop\:m-l {
+    margin: 1.5rem;
+  }
+
+  .desktop\:m-xl {
+    margin: 2rem;
+  }
+
+  .desktop\:m-xxl {
+    margin: 2.5rem;
+  }
+
+  .desktop\:m-xxxl {
+    margin: 3rem;
+  }
+
+  /* Responsive for Horizontal and Vertical Padding and Margin */
+  .desktop\:px-xxxs {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
+
+  .desktop\:px-xxs {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .desktop\:px-xs {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .desktop\:px-s {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .desktop\:px-m {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .desktop\:px-l {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .desktop\:px-xl {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .desktop\:px-xxl {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .desktop\:px-xxxl {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .desktop\:py-xxxs {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+
+  .desktop\:py-xxs {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .desktop\:py-xs {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .desktop\:py-s {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .desktop\:py-m {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .desktop\:py-l {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .desktop\:py-xl {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .desktop\:py-xxl {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .desktop\:py-xxxl {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
